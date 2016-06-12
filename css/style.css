@@ -2,63 +2,80 @@ body{
     margin: 0;
     padding: 0px;
     width: 1350px;
+    height: 2000px;
 }
 header{
     height: 330;
+    /*height: 60px;
+    width: 100%;
+    position: fixed;
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.00) 0%, #000000 100%);*/
+    display: flex;
+    height: 100px;
 
-   
 }
 .menu{
-    background-color: #fff;
-    left: 280px;
+    background-color: transparent;
+    /*left: 280px;*/
     margin-top: 20px;
-    padding-top: 70px;
-    position: fixed;
+    padding-top: 30px;
     right: 200px;
     top: 0;
     /*z-index: 1030;*/
-    height: 80px; 
-    width: 680px;
+    height: 40px; 
+    /*width: 680px;*/
+ 
     
 }
-
-
 .header-menu{
-    padding: 80px;
+    padding: 50px;
+   
     left: 0;
-    width: 100px;
+    width: 90px;
     height: 0px;   
+   background-color: transparent;
  
 }
-.encabezado{
- display:flex;
-    justify-content: space-between;
-      align-content: flex-start;
-        align-items: center;
+#encabezado{
+
+justify-content: space-between;
+align-content: flex-start;
+align-items: center;
+width: 1100px;
+    border-bottom: lightgray;
+    /*position: fixed;
+    z-index: 90; */ 
+/*background-image: linear-gradient(0deg, rgba(225,255,255,0.00) 0%, #000000 100%);*/
 }
 
 
 .concurso{
-   width: 63px;
-    height: 0px;
-   margin-top: 20px;
-   padding-top: ;    
+   width: 70px;
+    height: 10px;
+   margin-top: 10px;
+   /*padding-top: ;*/
+    background-color: transparent;
+   
+ 
 }
 
 #container{
   
     margin: 0 auto;
-    width: 1350px;
+    width: 1100px;
     margin: 0 auto;
     padding: 3px 15px;
-    max-width: 1200px;
+    max-width: 1350px;
     min-width: 0;
     padding: 30px 0 0;
-    width: 98%;
+    width: 95%;
     
     margin-right: auto;
     margin-left: auto;
     display:block;
+    
+        
+    
     
     
 }
@@ -82,7 +99,7 @@ div#container{
     width: 102px;
 }
 .btn-default {
-    color: #333;
+    color: white;
     background-color: #fff;
     border-color: #ccc;
 }
@@ -100,6 +117,7 @@ div#container{
     font-size: 14px;
     line-height: 1.42857;
     border-radius: 4px;
+    background-color: #9abb4f
  
 }
 .barra-search #searchsubmit, .form-submit input[type=submit], header .search-header .btn-default {
@@ -184,15 +202,15 @@ left: 0px;
 height: 70px;
 background-color: black;
  display:flex;
-    margin-top: 2px;
+margin-top: 2px;
     
 }
 
-  .menu{
+  /*.menu{
        height: 30px;
       display: flex;
       justify-content: center;
-    }
+    }*/
 
  .menu>ul>li{
     display: inline-block;
@@ -244,13 +262,15 @@ background-color: black;
         margin-top: 50px;
 }
 
+
 .notas-secundarias{
     border-bottom: 1px solid #e1e1e1;
     margin-bottom: 30px;
     margin-top: 10px;
     overflow: hidden;
     padding-bottom: 30px;
-    margin-top: 26px;
+    margin-top: 25px;
+    margin-left:50px; 
   
 }
 
@@ -258,14 +278,31 @@ background-color: black;
     margin: 10px 0 15px;
     position: relative;
     text-align: center;
+    display: block;
+    
+    
+    
 }
 
-    
+    .description-title::before {
+    background: none repeat scroll 0 0 #e1e1e1;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    box-sizing: border-box;
+        
+}
 
+.description-title:after {
+     box-sizing: border-box; 
+}
 
-.description-title::before{
-    left: 0px;
-     border: darkgray;
+.title{
+    /*display: block;*/
+    position: relative;
     
 }
 .post-content-main{
@@ -280,6 +317,162 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
+.notas-secundarias{
+    width: 1200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+  
+}
+.col-md-4 {
+ width: 33.33333%;
+}
+
+.title .description-title h3 {
+    background: none repeat scroll 0 0 #fff;
+    color: #444;
+    display: inline-block;
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    margin: 0!important;
+    padding: 0 20px;
+    position: relative;
+    text-transform: uppercase;
+    vertical-align: middle;
+    z-index: 50;
+}
+#main .title h3 {
+    background-color: #fff;
+    color: #444;
+    display: block;
+    font-family: OpenSans-Semibold;
+    font-size: 15px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 2;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: OpenSans-Semibold;
+    line-height: 1.3;
+    margin-top: 20px;
+}
+.h3, h3 {
+    font-size: 24px;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-bottom: 10px;
+}
+
+.btn_transparente:hover {
+    background-color: #9abb4f;
+    border: 1px solid #9abb4f;
+    color: #fff;
+}
+.btn_transparente {
+    background-color: transparent;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    color: #9abb4f;
+    display: inline-block;
+    font-family: OpenSans-Semibold;
+    padding: 8px 20px;
+    text-transform: uppercase;
+}
+
+.col-md-4 col-sm-4 col-xs-12 article{
+    height: 100px;
+    display: flex;
+    background-repeat: no-repeat;      
+}
+.text-center {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+#seccion-principal-noticias .col-md-8 {
+    padding: 0;
+    width: 70%;
+   
+}
+.seccion-principal-noticias .col-sm-8 {
+    width: 71%;
+     
+}
+.col-md-8 {
+    width: 66.66667%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+}
+
+.main-articles{
+     display: flex;
+    width: 840px;
+    height: 360px;
+    margin-left: 50px;
+   
+}
+
+.title_caja {
+    font-family: OpenSans-Semibold;
+    font-size: 18px;
+    padding-left: 15px;
+    display: block;
+    margin-top: 10px;
+    
+}
+/*a {
+    color: #9abb4f;
+    text-decoration: none;
+}*/
+.img-article-post h3 {
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+#proyectos-main{
+    display: block;
+    width: 900px;
+}
+.h2{
+    margin-left: 50px;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
