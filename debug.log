@@ -1,0 +1,4 @@
+[0612/171506:ERROR:process_reader_win.cc(141)] SuspendThread: Acceso denegado. (0x5)
+[0612/171506:ERROR:exception_snapshot_win.cc(57)] thread ID 11376 not found in process
+[0612/171506:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::InitializeException failed
+[0613/130959:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess, ntstatus=-1073741558

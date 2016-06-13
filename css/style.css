@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0px;
     width: 1350px;
-    height: 2000px;
+    height: 1200px;
 }
 header{
     height: 330;
@@ -17,7 +17,7 @@ header{
 .menu{
     background-color: transparent;
     /*left: 280px;*/
-    margin-top: 20px;
+    margin-top: -20px;
     padding-top: 30px;
     right: 200px;
     top: 0;
@@ -28,13 +28,39 @@ header{
     
 }
 .header-menu{
-    padding: 50px;
-   
+    padding: 60px;
     left: 0;
     width: 90px;
     height: 0px;   
    background-color: transparent;
+    margin-top: 0px;
  
+}
+.form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+.buscador{
+
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 #encabezado{
 
@@ -43,6 +69,10 @@ align-content: flex-start;
 align-items: center;
 width: 1100px;
     border-bottom: lightgray;
+    background-image: url('../images/fondo-menu.jpg');
+    height: 100%;
+    width: 1282px;
+    margin-top: 0;
     /*position: fixed;
     z-index: 90; */ 
 /*background-image: linear-gradient(0deg, rgba(225,255,255,0.00) 0%, #000000 100%);*/
@@ -50,9 +80,9 @@ width: 1100px;
 
 
 .concurso{
-   width: 70px;
+   width: 200px;
     height: 10px;
-   margin-top: 10px;
+   margin-top: 0px;
    /*padding-top: ;*/
     background-color: transparent;
    
@@ -117,7 +147,8 @@ div#container{
     font-size: 14px;
     line-height: 1.42857;
     border-radius: 4px;
-    background-color: #9abb4f
+    background-color: #9abb4f;
+    margin-top: 15px;
  
 }
 .barra-search #searchsubmit, .form-submit input[type=submit], header .search-header .btn-default {
@@ -142,6 +173,7 @@ button, html input[type=button], input[type=reset], input[type=submit] {
 }
 .texto-buscar{
     margin-top: 10px;
+    
    
    
 }
@@ -160,7 +192,7 @@ label {
     
 }
 .buscador{
-    width: 340px;
+   /* width: 340px;*/
     margin-top: 60px;
     margin-right:20px;
     display: flex;
@@ -457,7 +489,7 @@ h4 {
     font-weight: bold;
 }
 #seccion-principal-noticias{
-    height: 1200px;
+    height: 1250px;
     
 }
 
@@ -493,6 +525,11 @@ h4 {
 
 #libros-publicados{
     display: flex;
+}
+.item-libro{
+    margin-top:0px;
+    padding: 0px;
+    display: block;
 }
 
 #libros-publicados img {
@@ -576,23 +613,86 @@ img {
     vertical-align: middle;
     border: 0;
 }
-.portado-libro-destacado a{
+/*
+.portado-libro-destacado h3{
     width: 347px;
     padding: 0;
+    justify-content: center;
+}*/
+/*
+.title_caja{
+    font-family: OpenSans-Semibold;
+    font-size: 18px;
+    padding-left: 15px;
+    display: block;
+    margin-top: 10px;
+    justify-content: center;
+}
+*/
+ #pie{
+     width: 1200px;
+     height: 200px
+     min-height: 150px;
+     clear: both;
+     margin-top: 60px;
+     background-color: gainsboro;
+     margin-left: 45px;
+     display: flex;
+    /* margin-left: 74px;
+     margin-right: 74px;
+     padding: 30px;*/
+     
+        
+        
+    }
+
+.cont>ul>li{
+   
+    /*margin-top: 20px;
+    padding: 0px;
+    width:10 px;
+    height: 10px;*/
+  
+    font-family: serif;
+    font-size: 1em;
+    display: block; 
+}
+.link-foot .title {
+    position: relative;
+    overflow: hidden;
+}
+
+.title_ {
+    display: block;
+    /*justify-content: center;
+    justify-content: space-between;*/
+   
+}
+.col-md-20p {
+    width: 10%;
+     float: left;
+    padding: 0 15px;
+    display: flex;
+}
+
+
+
+svg {
+    transform-origin: 50% 50% 0px;
+}
+* {
+    transform-origin: 0px 0px 0px;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
+.link-foot .conteiner ul li a {
+    color: #444;
+    font-family: OpenSans-Regular;
+    font-size: 12px;
+    display: table;
+}
 
 
 
